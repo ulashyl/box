@@ -35,6 +35,18 @@ const defaultConfig = {
     box11_title: "Подарок от Кэмерин",
     box11_content: "Дорогая Ади, поздравляю тебя с днём рождения, желаю много-много шоколада и море джемов. Чтобы все в жизни было также сладко, как и у меня в сумке!",
     box11_image: "https://i.ibb.co/wNSb3yT1/IMG-6504.jpg",
+    box12_title: "Коробка 12",
+    box12_content: "Фантастика! Эта коробка полна открытий.",
+    box12_image: "",
+    box13_title: "Коробка 13",
+    box13_content: "Невероятно! В этой коробке настоящее представление.",
+    box13_image: "",
+    box14_title: "Коробка 14",
+    box14_content: "Точно в цель! Эта коробка содержит именно то, что нужно.",
+    box14_image: "",
+    box15_title: "Коробка 15",
+    box15_content: "Творческий шедевр! В этой коробке искусство и красота.",
+    box15_image: "",
     background_color: "#667eea",
     secondary_surface_color: "#ffffff",
     text_color: "#333333",
@@ -54,12 +66,16 @@ const boxImages = [
     "https://i.ibb.co/r23JkPBK/2-DF9-CAD8-7-AF9-4-E40-A104-16204-CE31-C9-D.png",
     "https://i.ibb.co/KpFgCvD6/4-C8673-F7-1-D9-F-428-E-BE92-8-F0-D7-CDA7-B18.png",
     "https://i.ibb.co/22vsgxx/6224-FD9-F-7-E7-A-4-AFD-8320-0-AE389-FA7-E0-D.png",
-    "https://i.ibb.co/XRKt1YZ/91-F1-C315-F695-41-DF-8-EC3-70320-D5-D4847.png"
+    "https://i.ibb.co/XRKt1YZ/91-F1-C315-F695-41-DF-8-EC3-70320-D5-D4847.png",
+    "https://i.ibb.co/CTrp4tC/63657-FCA-1754-4-D32-B66-E-B05933-E2-DB80.png",
+    "https://i.ibb.co/YTXGJ9bX/765637-B1-C079-436-D-AB8-E-1-BBB38-C23594.png",
+    "https://i.ibb.co/VYQJvLMw/C470-A235-4-B1-F-4-A12-8-F8-F-8-D3-CB7309102.png",
+    "https://i.ibb.co/MDHbKX13/B045-D95-E-C7-F3-479-F-9-EF9-B2354-ECFEAEA.png"
 ];
 
 let currentConfig = { ...defaultConfig };
 let imageLoadErrors = 0;
-const MAX_BOXES = 11; // Удалены пустые коробки 12-15
+const MAX_BOXES = 15;
 
 /**
  * Загружает изображение с обработкой ошибок и lazy loading
